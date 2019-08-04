@@ -1,0 +1,16 @@
+service: my-weath-chatbot
+
+provider:
+ name: aws
+ runtime: nodejs10.x
+ memorySize: 128
+ timeout: 20
+ stage: production
+ region: us-east-1
+
+functions:
+ api:
+   handler: lambda.universal
+   events:
+     - http: ANY {proxy+}
+     - http: ANY /
