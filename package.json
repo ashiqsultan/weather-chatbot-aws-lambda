@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.19.1",
-    "serverless": "^1.49.0"
+    "serverless": "^3.25.1"
   },
   "dependencies": {
     "aws-serverless-express": "^3.3.6",
